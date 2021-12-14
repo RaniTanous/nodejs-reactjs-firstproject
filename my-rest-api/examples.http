@@ -1,0 +1,25 @@
+@local=http://localhost:3100/api
+
+POST {{local}}/auth
+Content-Type: application/json
+
+{
+    "email": "biz@gmail.com",
+    "password": "123456"
+}
+
+###
+
+GET {{local}}/cards
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGY2NmM1ODE1Y2E4MDRmMjhhYTgxYWEiLCJiaXoiOnRydWUsImlhdCI6MTYyNjc2MzQyM30.ePUqmsDiJ9qBbc5A24I18pZbDBX35vkElxJuT42Sh7w
+
+
+###
+
+GET {{local}}/restaurants/all
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGY2NmM1ODE1Y2E4MDRmMjhhYTgxYWEiLCJiaXoiOnRydWUsImlhdCI6MTYyNjc2MzQyM30.ePUqmsDiJ9qBbc5A24I18pZbDBX35vkElxJuT42Sh7w
+###
+
+GET {{local}}/orders/myorders
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGY2NmM1ODE1Y2E4MDRmMjhhYTgxYWEiLCJiaXoiOnRydWUsImlhdCI6MTYyNjc2MzQyM30.ePUqmsDiJ9qBbc5A24I18pZbDBX35vkElxJuT42Sh7w
+###
