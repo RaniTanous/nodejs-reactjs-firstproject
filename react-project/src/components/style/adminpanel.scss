@@ -1,0 +1,39 @@
+.containered {
+    display: flex;
+    flex-direction: row;
+    .subcont {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 7vh;
+        button {
+            color: black;
+            padding: 20px;
+            margin-left: 2px;
+        }
+    }
+}
+#yes {
+    color: aquamarine;
+}
+#no {
+    color: bisque;
+}
+
+#active {
+    border-radius: 9999px;
+    height: 12px;
+    width: 12px;
+    background-color: green;
+    display: flex;
+    margin: auto;
+}
+
+#inactive {
+    display: flex;
+    margin: auto;
+    border-radius: 9999px;
+    height: 12px;
+    width: 12px;
+    background-color: red;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
